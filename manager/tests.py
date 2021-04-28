@@ -21,7 +21,7 @@ class ManagerModelTest(TestCase):
         print("Testando se o nome foi cadastrado em name Falha")
         manager = Maneger.objects.get(id=1)
         expected_object_name = f'{manager.name}'
-        self.assertEquals(expected_object_name, 'HIGOR')
+        self.assertNotEquals(expected_object_name, 'HIGOR')
 
     def test_name_of_address_create(self):
         print("Testando se o endereço foi cadastrado em address")
