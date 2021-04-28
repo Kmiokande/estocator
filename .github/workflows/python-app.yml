@@ -37,6 +37,3 @@ jobs:
       run: |
         coverage run --source=. manage.py test
         coverage report -m
-    - name: Mutation testing
-      run: |
-        mutmut run
